@@ -1,2 +1,5 @@
 Gemfile.lock
 .vagrant
+.ruby-version
+/cookbooks/
+/tmp/librarian/
