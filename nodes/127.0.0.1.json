@@ -7,6 +7,6 @@
       }
    },
    "run_list":[
-      "rescipe[nginx::source]"
+      "recipe[nginx::source]"
    ]
 }
