@@ -12,8 +12,12 @@
    "nodejs": {
       "version": "0.10.26"
    },
+   "mongodb": {
+   },
    "run_list":[
       "recipe[nginx::source]",
-      "recipe[nodejs::install_from_source]"
+      "recipe[nodejs::install_from_source]",
+      "recipe[mongodb::10gen_repo]",
+      "recipe[mongodb::default]"
    ]
 }
