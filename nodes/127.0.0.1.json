@@ -14,10 +14,16 @@
    },
    "mongodb": {
    },
+   "mongodb_import": {
+     "db": "ndb",
+     "collection": "nutrition",
+     "file": "/vagrant/files/exported_mongo.json"
+   },
    "run_list":[
       "recipe[nginx::source]",
       "recipe[nodejs::install_from_source]",
       "recipe[mongodb::10gen_repo]",
-      "recipe[mongodb::default]"
+      "recipe[mongodb::default]",
+      "recipe[mongodb-import::default]"
    ]
 }

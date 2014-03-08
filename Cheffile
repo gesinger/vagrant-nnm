@@ -7,6 +7,7 @@ cookbook 'runit'
 cookbook 'nginx', :git => 'git://github.com/opscode-cookbooks/nginx.git'
 cookbook 'nodejs'
 cookbook 'mongodb'
+cookbook 'mongodb-import', :path => '../chef-mongodb-import'
 
 # cookbook 'chef-client'
 
