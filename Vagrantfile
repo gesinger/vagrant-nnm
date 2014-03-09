@@ -85,10 +85,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
 
+  # Since we are using vagrant-berkshelf, we won't need the cookbooks_path
+  config.berkshelf.enabled = true
+
   VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', '127.0.0.1.json').read);
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["site-cookbooks", "cookbooks"]
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
     chef.provisioning_path = "/tmp/vagrant-chef"
