@@ -1,4 +1,6 @@
-vagrant-...
+### vagrant-nnm
+
+Vagrant template with Chef provisioning running nnm (nginx, node, and mongodb)
 
 ### Installation
 
