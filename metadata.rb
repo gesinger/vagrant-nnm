@@ -1,0 +1,6 @@
+name             'vagrant-chef-nginx-node-mongo'
+maintainer       'Garrett Singer'
+maintainer_email 'gesinger@gmail.com'
+license          'MIT'
+description      'Sets up an environment using Vagrant and Chef with nginx, node, and mongodb'
+version          '0.0.1'
